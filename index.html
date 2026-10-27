@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #111827;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        header h1 {
+            color: #38bdf8;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero h2 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #38bdf8;
+            color: #0f172a;
+            padding: 12px 24px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: white;
+        }
+
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #1e293b;
+            border-radius: 15px;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 15px;
+        }
+
+        .hobbies {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(180px, 1fr)
+            );
+            gap: 15px;
+        }
+
+        .hobby {
+            background: #334155;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .hobby h3 {
+            color: #38bdf8;
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #38bdf8;
+        }
+
+        footer {
+            background: #111827;
+            padding: 20px;
+            text-align: center;
+            margin-top: 40px;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            section {
+                margin: 20px 12px;
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My Personal Website</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h2>Hello, I'm <span>Trevor stephen</span>!</h2>
+
+        <p>Welcome to Trevor's personal website.</p>
+
+        <a href="#about" class="button">Discover More</a>
+    </div>
+
+    <section id="about">
+        <h2>👋 About Me</h2>
+
+        <p>
+            Hello! My name is Trevor stephen. I am a student in Ugenya high
+            interested in technology and computer programming.
+            I enjoy learning new skills, exploring ideas,
+            and discovering what I can create with technology.
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2>⭐ My Hobbies</h2>
+
+        <div class="hobbies">
+
+            <div class="hobby">
+                <h3>💻 Programming</h3>
+                <p>Learning to build websites and applications.</p>
+            </div>
+
+            <div class="hobby">
+                <h3>🎵 Music</h3>
+                <p>Listening to rhumba Music.</p>
+            </div>
+
+            <div class="hobby">
+                <h3>🎮 Gaming</h3>
+                <p>Playing GTA V and having fun.</p>
+            </div>
+
+            <div class="hobby">
+                <h3>📚 Learning</h3>
+                <p>Discovering car staffs every day.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>📩 Contact Me</h2>
+
+        <p>
+            Thank you for visiting Trevor's website!
+            I'm always learning and exploring technology.
+        </p>
+
+        <p>
+            Email:
+            <a href="mailto:yourname@example.com">
+                trevorstephen39@gmail.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Trevor's personal Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
